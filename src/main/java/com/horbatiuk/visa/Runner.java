@@ -1,5 +1,9 @@
 package com.horbatiuk.visa;
 
+import com.horbatiuk.visa.dataStorage.AllPriceResponds;
+import com.horbatiuk.visa.dataStorage.AllRequests;
+import com.horbatiuk.visa.dataStorage.AllTravelAgencies;
+import com.horbatiuk.visa.dataStorage.AllUsers;
 import com.horbatiuk.visa.utils.FileUtils;
 
 /**
@@ -8,10 +12,10 @@ import com.horbatiuk.visa.utils.FileUtils;
 public class Runner {
     public static void main(String[] args) {
         FileUtils.readAllDataFromFiles();
-//        System.out.println(AllRequests.getAllRequestsMap().size());
-//        System.out.println(AllUsers.getAllUsersMap().size());
-//        System.out.println(AllPriceResponds.getAllPriceRespondsMap().size());
-//        System.out.println(AllTravelAgencies.getAllTravelAgenciesMap().size());
+        System.out.println(AllRequests.getAllRequestsMap().size());
+        System.out.println(AllUsers.getAllUsersMap().size());
+        System.out.println(AllPriceResponds.getAllPriceRespondsMap().size());
+        System.out.println(AllTravelAgencies.getAllTravelAgenciesMap().size());
 
 //        FileUtils.readAllRequestsFromReadableFile();
 //        FileUtils.readAllUsersFromReadableFile();
